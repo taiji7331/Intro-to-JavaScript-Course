@@ -1,11 +1,17 @@
 // Task 1: Using the logical && operator
 var score = 8;
+
+// In my first attempt, I used the concatenation operator with parentheses to solve the problem
 console.log("Mid-level Skills: " + (score > 0 && score < 10));
+// The solutions page showed that they used a comma instead. Both solutions seem valid.
+console.log("Mid-level Skills:", score > 0 && score < 10);
+
 
 // Task 2: Using the logical || operator
 var timeRemaining = 0;
 var energy = 10;
 
+// See above, the solutions page showed commas instead of concatenation
 console.log("Game Over: " + (timeRemaining == 0 || energy == 0));
 
 // Task 3: Using the modulus operator, %, to test if a given number is odd
