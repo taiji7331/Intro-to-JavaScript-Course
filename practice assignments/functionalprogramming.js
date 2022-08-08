@@ -1,3 +1,7 @@
+// This assignment had a handful of problems in the instructions, and the evaluation algorithm was very picky about minute details
+// For example, it seemed to mark things as incorrect if they had terminating semi-colons which is ridiculous.
+// I personally prefer semi-colons on all lines even though they are optional.
+
 // Task 1: Build a function-based console log message generator
 function consoleStyler(color,background,fontSize,txt) {
     var message = "%c" + txt
@@ -22,6 +26,11 @@ function celebrateStyler(reason) {
 // Task 3: Run both the consoleStyler and the celebrateStyler functions
 consoleStyler('#1d5c63', '#ede6db', '40px', 'Congrats!')
 celebrateStyler('birthday')
+
+// Task 4 was the biggest problem. The instructions said to create a function to call both functions and to invoke it using some specific values.
+// I assumed that meant using variables as parameters and filling in the literal values in the invocation.
+// This was not what it wanted. It wanted the main function to have no parameters, and the inner functions to be invoked using literal values as parameters.
+// I personally am not satisfied with the result of this code but alas, this is what got me 100% on the assignment.
 
 // Task 4: Insert a congratulatory and custom message
 function styleAndCelebrate() {
