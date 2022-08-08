@@ -6,6 +6,7 @@ class Person {
         this.energy = energy
     }
     sleep() {
+        // Worth noting that I made a mistake at this part. The keyword this is necessary on both sides or it will give a reference error
         this.energy = this.energy + 10
     }
     doSomethingFun() {
@@ -38,6 +39,7 @@ function manager() {
     return manager
 }
 
+// This last part was just me testing out the next reading section, which indicates how to loop over objects and their properties in JavaScript
 for (entry of Object.entries(intern())) {
     console.log(entry);
 }
