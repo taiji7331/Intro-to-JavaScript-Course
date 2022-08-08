@@ -1,3 +1,5 @@
+// The template for this practice was the exercise for OOP. It provided some useful classes with which to practice different loops
+
 // Task 1: Code a Person class
 class Person {
     constructor(name = "Tom", age = 20, energy = 100) {
@@ -38,6 +40,8 @@ function manager() {
     return manager
 }
 
+
+// ------------! Below this point is new practice using the above objects ----------------!
 let intern1 = intern();
 let manager1 = manager();
 
